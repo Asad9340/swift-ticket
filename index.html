@@ -215,9 +215,9 @@
           </div>
           <div
             id="buySection"
-            class="bg-[#FFFFFF] mt-7 rounded-3xl grid grid-cols-3"
+            class="bg-[#FFFFFF] mt-7 rounded-3xl grid grid-cols-7"
           >
-            <div class="p-8 col-span-2 space-y-3">
+            <div class="p-8 col-span-4 space-y-3">
               <div><h4>Select Your Seat</h4></div>
               <hr />
               <div class="flex justify-between">
@@ -229,7 +229,8 @@
                   <img src="./images/seat-green-filled.png" alt="" />
                   <h4 class="text-[#1DD100]">Selected</h4>
                 </div>
-              </div><hr>
+              </div>
+              <hr />
               <div class="space-y-6">
                 <div class="flex justify-end items-center">
                   <div>
@@ -611,7 +612,76 @@
                 </div>
               </div>
             </div>
-            <div></div>
+            <div class="col-span-3 p-8 space-y-3">
+              <div><h3>Select Your Seat</h3></div>
+              <hr />
+              <div class="bg-[#F7F8F8] p-4 space-y-4 rounded-xl">
+                <div class="flex justify-between mb-3">
+                  <h4>Seat</h4>
+                  <h4>Class</h4>
+                  <h4>Price</h4>
+                </div>
+                <hr />
+                <div>Added element</div>
+                <div class="flex justify-between items-center">
+                  <h3>Total Price</h3>
+                  <h3>BDT <span>0</span></h3>
+                </div>
+                <div class="flex justify-center items-center">
+                  <input
+                    class="h-10 rounded-lg pl-4"
+                    type="text"
+                    placeholder="Have any copupon?"
+                  />
+                  <button class="bg-[#1DD100] rounded-lg text-white py-2 px-4">
+                    Apply
+                  </button>
+                </div>
+                <div class="flex justify-between items-center">
+                  <h3>Grand Total</h3>
+                  <h3>BDT <span>0</span></h3>
+                </div>
+                <div class="space-y-5">
+                  <label for="name">Passenger Name*</label><br />
+                  <input
+                    class="w-full h-10 rounded-xl"
+                    type="text"
+                    name=""
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="space-y-5">
+                  <label for="name">Passenger Phone*</label><br />
+                  <input
+                    class="w-full h-10 rounded-xl"
+                    type="tel"
+                    name=""
+                    id="name"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+                <div class="space-y-5">
+                  <label for="name">Email ID</label><br />
+                  <input
+                    class="w-full h-10 rounded-xl"
+                    type="email"
+                    name=""
+                    id="name"
+                    placeholder="Enter your email id"
+                  />
+                </div>
+                <div>
+                  <button class="w-full bg-[#1DD100] text-[20px] font-extrabold py-4 text-white rounded-2xl">Next</button>
+                </div>
+                <div class="flex justify-between">
+                  <a class="underline" href="">Terms and Conditions</a>
+                  <a class="underline" href="">Cancellation Policy</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
