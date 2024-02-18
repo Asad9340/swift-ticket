@@ -37,7 +37,7 @@ for (const btn of btns) {
 }
 
 function colorBtn(btn) {
-  document.getElementById(btn).style.background = 'green';
+  document.getElementById(btn).style.background = '#1DD100';
   const p = document.createElement('p');
   p.textContent = btn;
   const p2 = document.createElement('p');
