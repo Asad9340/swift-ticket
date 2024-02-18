@@ -10,6 +10,7 @@ for (const btn of btns) {
       alert('You can only buy four seats');
       return;
     }
+    document.getElementById('seatCounter').innerText=btnClick;
     colorBtn(e.target.id);
     costDisplay();
     const nextBtn = document.getElementById('nextBtn');
@@ -44,11 +45,9 @@ function costDisplay() {
   const cost = document.getElementById('totalPrice');
   totalCost += 550;
   cost.innerText = totalCost;
-  console.log(totalCost);
   const grandCost = document.getElementById('grandTotal');
   grandTotal += 550;
   grandCost.innerText = grandTotal;
-  console.log(grandTotal);
 
   const applyBtn = document.getElementById('applyBtn');
   applyBtn.addEventListener('click', () => {
