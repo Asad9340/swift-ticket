@@ -9,7 +9,7 @@
 
 
 
-const btns = document.getElementsByClassName('btn');
+const btns = document.getElementsByClassName('seatBtn');
 let btnClick = 0;
 let totalCost = 0;
 let grandTotal = 0;
