@@ -6,7 +6,7 @@ for (const btn of btns) {
     btnClick += 1;
     console.log(btnClick);
     if (btnClick > 4) {
-      alert("You can only click four times");
+      alert("You can only buy four seats");
       return;
     }
     colorBtn(e.target.id);
