@@ -13,7 +13,14 @@ for (const btn of btns) {
     }
     colorBtn(e.target.id);
     costDisplay();
-    // totalCost.innerText = total + 550;
+    const nextBtn = document.getElementById('nextBtn');
+    nextBtn.addEventListener('click', () => {
+      const name = document.getElementById('name').value;
+      const mobile = document.getElementById('mobile').value;
+      if (btnClick > 0 && name !== '' && mobile !== '') {
+        window.location.href = 'success.html';
+      }
+    });
   });
 }
 
@@ -49,21 +56,25 @@ function costDisplay() {
     const couponInput = document.getElementById('couponInput').value;
     if (btnClick === 4 && couponInput === 'NEW15') {
       grandCost.innerText = grandTotal - grandTotal * 0.15;
-      discount(grandTotal);
+      discount(grandTotal, 0.15);
+      const inputBox = document.getElementById('inputBox');
+      inputBox.style.display = 'none';
+    } else if (btnClick === 4 && couponInput === 'Couple 20') {
+      grandCost.innerText = grandTotal - grandTotal * 0.2;
+      discount(grandTotal, 0.2);
       const inputBox = document.getElementById('inputBox');
       inputBox.style.display = 'none';
     }
-    console.log(couponInput);
   });
 }
 
-function discount() {
+function discount(grandTotal, amount) {
   if (count === 0) {
     const discountAmount = document.getElementById('discountAmount');
     const p = document.createElement('p');
     p.textContent = 'DiscountAmount : ';
     const p2 = document.createElement('p2');
-    p2.textContent = parseInt(grandTotal * 0.15);
+    p2.textContent = parseInt(grandTotal * amount);
     discountAmount.appendChild(p);
     discountAmount.appendChild(p2);
   }
