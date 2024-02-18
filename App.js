@@ -7,10 +7,10 @@ for (const btn of btns) {
   btn.addEventListener('click', e => {
     btnClick += 1;
     if (btnClick > 4) {
-      alert('You can only buy four seats');
+      alert('You can book only four tickets');
       return;
     }
-    document.getElementById('seatCounter').innerText=btnClick;
+    document.getElementById('seatCounter').innerText = btnClick;
     colorBtn(e.target.id);
     costDisplay();
     const nextBtn = document.getElementById('nextBtn');
@@ -50,6 +50,7 @@ function costDisplay() {
   grandCost.innerText = grandTotal;
 
   const applyBtn = document.getElementById('applyBtn');
+
   applyBtn.addEventListener('click', () => {
     const couponInput = document.getElementById('couponInput').value;
     if (btnClick === 4 && couponInput === 'NEW15') {
@@ -63,6 +64,9 @@ function costDisplay() {
       const inputBox = document.getElementById('inputBox');
       inputBox.style.display = 'none';
     }
+    // else {
+    //   alert('Please add more items');
+    // }
   });
 }
 

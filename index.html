@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 5</title>
+    <title>Swift-Ticket</title>
     <!-- ------------font inter and railway------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,7 @@
     <!--           nav section       -->
     <header>
       <nav
-        class="font-Raleway flex justify-between px-10 lg:px-32 py-5 lg:py-12"
+        class="font-['Raleway'] flex justify-between px-10 lg:px-32 py-5 lg:py-12"
       >
         <div>
           <h3 class="text-3xl font-extrabold text-[#030712]">Swift-Ticket</h3>
@@ -49,12 +49,14 @@
     </header>
     <main>
       <section
-        class="font-Raleway flex flex-col justify-between px-10 lg:px-32 py-5 lg:py-12 relative"
+        class="font-['Inter'] flex flex-col justify-between px-10 lg:px-32 py-5 lg:py-12 relative"
       >
         <img src="./images/banner.png" alt="" />
-        <div class="absolute top-[70px] w-[80%] text-center">
+        <div class="absolute top-[90px] w-[80%] text-center">
           <div>
-            <h1 class="text-5xl font-extrabold leading-[86px] text-[#fff]">
+            <h1
+              class="font-['Raleway'] text-5xl font-extrabold leading-[70px] text-[#fff] mt-10"
+            >
               End-to-End Travel with <br /><span class="text-[#1DD100]"
                 >Swift-Ticket</span
               >
@@ -64,10 +66,45 @@
               simplifying every step of your journey.
             </p>
             <button
-              class="bg-[#1DD100] px-4 py-2 rounded-xl text-[#030712] font-bold text-sm"
+              class="bg-[#1DD100] px-4 py-3 rounded-lg text-[#030712] font-bold text-sm"
             >
               <a href="#buySection">Buy Tickets</a>
             </button>
+          </div>
+        </div>
+        <div class="flex gap-6 justify-center -m-16 mb-6 font-['Inter']">
+          <div
+            class="flex gap-3 justify-center items-center p-8 bg-[#FFFFFF] rounded-3xl border-b-2 border-b-[#1DD100] w-[310px]"
+          >
+            <div><img src="./images/people.png" alt="" /></div>
+            <div>
+              <h3 class="text-[#030712] font-['Inter'] text-3xl font-bold">
+                500K+
+              </h3>
+              <p class="text-[#03071299] text-[20px]">Registered users</p>
+            </div>
+          </div>
+          <div
+            class="flex gap-3 justify-center items-center p-8 bg-[#FFFFFF] rounded-3xl border-b-2 border-b-[#1DD100] w-[310px]"
+          >
+            <div><img src="./images/ticket-cupon.png" alt="" /></div>
+            <div>
+              <h3 class="text-[#030712] font-['Inter'] text-3xl font-bold">
+                1.7 lacks
+              </h3>
+              <p class="text-[#03071299] text-[20px]">Tickets sold</p>
+            </div>
+          </div>
+          <div
+            class="flex gap-3 justify-center items-center p-8 bg-[#FFFFFF] rounded-3xl border-b-2 border-b-[#1DD100] w-[310px]"
+          >
+            <div><img src="./images/stoppage.png" alt="" /></div>
+            <div>
+              <h3 class="text-[#030712] font-['Inter'] text-3xl font-bold">
+                80K+
+              </h3>
+              <p class="text-[#03071299] text-[20px]">Rental partners</p>
+            </div>
           </div>
         </div>
       </section>
@@ -661,9 +698,11 @@
                     Seat
                     <sup
                       ><span
-                        id="seatCounter" class="bg-[#1DD100] text-white font-semibold px-2 py-1 ml-1 rounded-md"
-                      >0</span
-                    ></sup>
+                        id="seatCounter"
+                        class="bg-[#1DD100] text-white font-semibold px-2 py-1 ml-1 rounded-md"
+                        >0</span
+                      ></sup
+                    >
                   </h4>
                   <h4>Class</h4>
                   <h4>Price</h4>
