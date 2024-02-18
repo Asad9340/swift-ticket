@@ -2,6 +2,7 @@ const btns = document.getElementsByClassName('btn');
 let btnClick = 0;
 let totalCost = 0;
 let grandTotal = 0;
+let count = 0;
 for (const btn of btns) {
   btn.addEventListener('click', e => {
     btnClick += 1;
@@ -42,4 +43,29 @@ function costDisplay() {
   grandTotal += 550;
   grandCost.innerText = grandTotal;
   console.log(grandTotal);
+
+  const applyBtn = document.getElementById('applyBtn');
+  applyBtn.addEventListener('click', () => {
+    const couponInput = document.getElementById('couponInput').value;
+    if (btnClick === 4 && couponInput === 'NEW15') {
+      grandCost.innerText = grandTotal - grandTotal * 0.15;
+      discount(grandTotal);
+      const inputBox = document.getElementById('inputBox');
+      inputBox.style.display = 'none';
+    }
+    console.log(couponInput);
+  });
+}
+
+function discount() {
+  if (count === 0) {
+    const discountAmount = document.getElementById('discountAmount');
+    const p = document.createElement('p');
+    p.textContent = 'DiscountAmount : ';
+    const p2 = document.createElement('p2');
+    p2.textContent = parseInt(grandTotal * 0.15);
+    discountAmount.appendChild(p);
+    discountAmount.appendChild(p2);
+  }
+  count++;
 }
