@@ -78,9 +78,6 @@ function costDisplay() {
       const inputBox = document.getElementById('inputBox');
       inputBox.style.display = 'none';
     }
-    // else {
-    //   alert('Please add more items');
-    // }
   });
 }
 
