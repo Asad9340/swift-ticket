@@ -7,6 +7,7 @@ for (const btn of btns) {
   btn.addEventListener('click', e => {
     btnClick += 1;
     if (btnClick > 4) {
+      btnClick -= 1;
       alert('You can book only four tickets');
       return;
     }
@@ -30,8 +31,10 @@ function colorBtn(btn) {
   p.textContent = btn;
   const p2 = document.createElement('p');
   p2.textContent = 'Economoy';
+  p2.classList.add('text-center');
   const p3 = document.createElement('p');
   p3.textContent = 550;
+  p3.classList.add('text-end');
   let displayElement = document.getElementById('displayElement');
   displayElement.appendChild(p);
   displayElement.appendChild(p2);
