@@ -1,3 +1,14 @@
+
+  const buySection = document.getElementById('buySection');
+  buySection.addEventListener('click', function () {
+    const destination = document.getElementById('destination');
+    if (destination) {
+      destination.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+
+
+
 const btns = document.getElementsByClassName('btn');
 let btnClick = 0;
 let totalCost = 0;

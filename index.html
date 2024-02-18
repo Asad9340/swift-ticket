@@ -66,9 +66,10 @@
               simplifying every step of your journey.
             </p>
             <button
+              id="buySection"
               class="bg-[#1DD100] px-4 py-3 rounded-lg text-[#030712] font-bold text-sm"
             >
-              <a href="#buySection">Buy Tickets</a>
+              Buy Tickets
             </button>
           </div>
         </div>
@@ -109,10 +110,12 @@
         </div>
       </section>
       <section
-      class="font-['Inter'] flex flex-col justify-between px-10 lg:px-32 py-5 lg:py-12"
+        class="font-['Inter'] flex flex-col justify-between px-10 lg:px-32 py-5 lg:py-12"
       >
         <div>
-          <h4 class="font-['Raleway'] text-[#030712] font-bold text-4xl mb-12 text-center">
+          <h4
+            class="font-['Raleway'] text-[#030712] font-bold text-4xl mb-12 text-center"
+          >
             Best offers for you
           </h4>
         </div>
@@ -172,7 +175,9 @@
         >
           <div>
             <div class="pt-32 mb-12 text-center">
-              <h3 class="font-['Raleway'] text-[#030712] font-bold text-4xl mb-6">
+              <h3
+                class="font-['Raleway'] text-[#030712] font-bold text-4xl mb-6"
+              >
                 Swift-Ticket
               </h3>
               <p class="text-sm text-[#03071299]">
@@ -189,7 +194,9 @@
                       <img src="./images/bus-logo.png" alt="" />
                     </div>
                     <div>
-                      <h3 class="font-['Raleway'] text-2xl font-bold text-[#030712]">
+                      <h3
+                        class="font-['Raleway'] text-2xl font-bold text-[#030712]"
+                      >
                         Greenline Paribahan
                       </h3>
                       <p class="text-[18px] text-[#03071299]">
@@ -226,13 +233,19 @@
                   </div>
                   <hr />
                   <div class="flex gap-1 justify-between pb-8">
-                    <div class="bg-[#0307120D] px-3 py-2 rounded-xl text-[#030712CC] text-[16px]">
+                    <div
+                      class="bg-[#0307120D] px-3 py-2 rounded-xl text-[#030712CC] text-[16px]"
+                    >
                       Boarding Point-Laxmipur
                     </div>
-                    <div class="bg-[#0307120D] px-3 py-2 rounded-xl text-[#030712CC] text-[16px]">
+                    <div
+                      class="bg-[#0307120D] px-3 py-2 rounded-xl text-[#030712CC] text-[16px]"
+                    >
                       Dropping Point-Bogura
                     </div>
-                    <div class="bg-[#0307120D] px-3 py-2 rounded-xl text-[#030712CC] text-[16px]">
+                    <div
+                      class="bg-[#0307120D] px-3 py-2 rounded-xl text-[#030712CC] text-[16px]"
+                    >
                       Est.Time - 11 Hour
                     </div>
                   </div>
@@ -242,7 +255,9 @@
                 <img src="./images/info-devider.png" alt="" />
               </div>
               <div class="col-span-3 flex justify-center items-center">
-                <div class="font-['Raleway'] flex flex-col items-center justify-center">
+                <div
+                  class="font-['Raleway'] flex flex-col items-center justify-center"
+                >
                   <img src="./images/fare.png" alt="" />
                   <h3 class="text-2xl text-[#030712] font-bold">550 Taka</h3>
                   <p class="text-base font-medium text-[#03071299]">Per Seat</p>
@@ -251,11 +266,15 @@
             </div>
           </div>
           <div
-            id="buySection"
+            id="destination"
             class="bg-[#FFFFFF] mt-7 rounded-3xl grid grid-cols-7"
           >
             <div class="p-8 col-span-4 space-y-3">
-              <div><h4 class="font-['Raleway'] text-base font-semibold">Select Your Seat</h4></div>
+              <div>
+                <h4 class="font-['Raleway'] text-base font-semibold">
+                  Select Your Seat
+                </h4>
+              </div>
               <hr />
               <div class="flex justify-between">
                 <div class="flex justify-center items-center gap-2">
@@ -272,7 +291,7 @@
                 <div class="flex justify-end items-center">
                   <div>
                     <img
-                      class="px-10 py-4 bg-[#F7F8F8] rounded-xl text-[#03071280] font-medium text-[18px]"
+                      class="px-10 py-4 bg-[#0307121A] rounded-xl text-[#03071280] font-medium text-[18px]"
                       src="./images/wheel.png"
                     />
                   </div>
@@ -690,7 +709,11 @@
               </div>
             </div>
             <div class="col-span-3 p-8 space-y-3">
-              <div><h3 class="font-['Raleway'] text-base font-semibold" >Select Your Seat</h3></div>
+              <div>
+                <h3 class="font-['Raleway'] text-base font-semibold">
+                  Select Your Seat
+                </h3>
+              </div>
               <hr />
               <div class="bg-[#F7F8F8] p-4 space-y-4 rounded-xl">
                 <div class="flex justify-between mb-3">
@@ -716,16 +739,19 @@
                   <h3>Total Price</h3>
                   <h3>BDT <span id="totalPrice">0</span></h3>
                 </div>
-                <div id="inputBox" class="flex justify-center items-center">
+                <div
+                  id="inputBox"
+                  class="flex justify-center items-center relative"
+                >
                   <input
                     id="couponInput"
-                    class="h-10 rounded-lg pl-4"
+                    class="h-14 w-full rounded-lg pl-4"
                     type="text"
                     placeholder="Have any Coupon?"
                   />
                   <button
                     id="applyBtn"
-                    class="bg-[#1DD100] rounded-lg text-white py-2 px-4"
+                    class="bg-[#1DD100] rounded-lg text-white py-2 px-4 absolute top-2 right-3"
                   >
                     Apply
                   </button>
@@ -741,7 +767,7 @@
                 <div class="space-y-5">
                   <label for="name">Passenger Name*</label><br />
                   <input
-                    class="w-full h-10 rounded-xl"
+                    class="w-full h-10 rounded-xl pl-3"
                     type="text"
                     name=""
                     id="name"
@@ -752,7 +778,7 @@
                 <div class="space-y-5">
                   <label for="mobile">Passenger Phone*</label><br />
                   <input
-                    class="w-full h-10 rounded-xl"
+                    class="w-full h-10 rounded-xl pl-3"
                     type="number"
                     name=""
                     id="mobile"
@@ -763,7 +789,7 @@
                 <div class="space-y-5">
                   <label for="email">Email ID</label><br />
                   <input
-                    class="w-full h-10 rounded-xl"
+                    class="w-full h-10 rounded-xl pl-3"
                     type="email"
                     name=""
                     id="email"
@@ -780,8 +806,12 @@
                   </button>
                 </div>
                 <div class="flex justify-between">
-                  <a class="underline" href="">Terms and Conditions</a>
-                  <a class="underline" href="">Cancellation Policy</a>
+                  <a class="underline text-[16px] text-[#03071299]" href="#"
+                    >Terms and Conditions</a
+                  >
+                  <a class="underline text-[16px] text-[#03071299]" href="#"
+                    >Cancellation Policy</a
+                  >
                 </div>
               </div>
             </div>
@@ -793,16 +823,24 @@
       <div class="flex justify-between py-24 px-32">
         <div>
           <h3 class="font-['Raleway'] text-3xl font-extrabold">Swift-Ticket</h3>
-        <p class="text-[18px] text-[#FFFFFFCC] py-3">P-Ticket is a digital platform to make your daily commuting better.</p>
-      </div>
+          <p class="text-[18px] text-[#FFFFFFCC] py-3">
+            P-Ticket is a digital platform to make your daily commuting better.
+          </p>
+        </div>
         <div class="space-y-2">
-          <h3 class="text-sm font-semibold font-['Raleway'] text-center">Download our app</h3>
-          <img  src="./images/playstore.svg" alt="">
+          <h3 class="text-sm font-semibold font-['Raleway'] text-center">
+            Download our app
+          </h3>
+          <img src="./images/playstore.svg" alt="" />
         </div>
       </div>
-      <hr>
+      <hr />
       <div class="flex justify-between py-14 px-32">
-        <div><p class="text-[#FFFFFFB2] text-[16px]">@all rights reserved, Swift-Ticket services limited.2024</p></div>
+        <div>
+          <p class="text-[#FFFFFFB2] text-[16px]">
+            @all rights reserved, Swift-Ticket services limited.2024
+          </p>
+        </div>
         <div class="flex justify-between gap-4 text-[16px] font-medium">
           <p>Terms & condition</p>
           <p>Return & refund policy</p>
