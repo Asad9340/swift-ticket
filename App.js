@@ -6,7 +6,6 @@ let count = 0;
 for (const btn of btns) {
   btn.addEventListener('click', e => {
     btnClick += 1;
-    console.log(btnClick);
     if (btnClick > 4) {
       alert('You can only buy four seats');
       return;
