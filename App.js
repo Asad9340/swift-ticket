@@ -1,19 +1,17 @@
 const btns = document.getElementsByClassName('btn');
 let btnClick = 0;
 let totalCost = 0;
+let grandTotal = 0;
 for (const btn of btns) {
   btn.addEventListener('click', e => {
     btnClick += 1;
     console.log(btnClick);
     if (btnClick > 4) {
-      alert("You can only buy four seats");
+      alert('You can only buy four seats');
       return;
     }
     colorBtn(e.target.id);
-    const cost = document.getElementById('totalPrice');
-    totalCost += 550;
-    cost.innerText = totalCost;
-    console.log(totalCost);
+    costDisplay();
     // totalCost.innerText = total + 550;
   });
 }
@@ -33,4 +31,15 @@ function colorBtn(btn) {
   document.getElementById(btn).disabled = true;
   let totalSeat = document.getElementById('totalSeat');
   totalSeat.innerText = parseInt(totalSeat.innerText) - 1;
+}
+
+function costDisplay() {
+  const cost = document.getElementById('totalPrice');
+  totalCost += 550;
+  cost.innerText = totalCost;
+  console.log(totalCost);
+  const grandCost = document.getElementById('grandTotal');
+  grandTotal += 550;
+  grandCost.innerText = grandTotal;
+  console.log(grandTotal);
 }
