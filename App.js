@@ -1,13 +1,10 @@
-
-  const buySection = document.getElementById('buySection');
-  buySection.addEventListener('click', function () {
-    const destination = document.getElementById('destination');
-    if (destination) {
-      destination.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-
-
+const buySection = document.getElementById('buySection');
+buySection.addEventListener('click', function () {
+  const destination = document.getElementById('destination');
+  if (destination) {
+    destination.scrollIntoView({ behavior: 'smooth' });
+  }
+});
 
 const btns = document.getElementsByClassName('seatBtn');
 let btnClick = 0;
@@ -67,13 +64,15 @@ function costDisplay() {
 
   applyBtn.addEventListener('click', () => {
     const couponInput = document.getElementById('couponInput').value;
-    if (btnClick === 4 && couponInput === 'NEW15') {
+    const offer1 = document.getElementById('new15').innerText;
+    const offer2 = document.getElementById('couple20').innerText;
+    if (btnClick === 4 && couponInput === offer1) {
       grandCost.innerText = grandTotal - grandTotal * 0.15;
       discount(grandTotal, 0.15);
       applyBtn.removeAttribute('disabled');
       const inputBox = document.getElementById('inputBox');
       inputBox.style.display = 'none';
-    } else if (btnClick === 4 && couponInput === 'Couple 20') {
+    } else if (btnClick === 4 && couponInput === offer2) {
       grandCost.innerText = grandTotal - grandTotal * 0.2;
       discount(grandTotal, 0.2);
       const inputBox = document.getElementById('inputBox');
