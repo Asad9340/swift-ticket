@@ -70,6 +70,7 @@ function costDisplay() {
     if (btnClick === 4 && couponInput === 'NEW15') {
       grandCost.innerText = grandTotal - grandTotal * 0.15;
       discount(grandTotal, 0.15);
+      applyBtn.removeAttribute('disabled');
       const inputBox = document.getElementById('inputBox');
       inputBox.style.display = 'none';
     } else if (btnClick === 4 && couponInput === 'Couple 20') {
