@@ -11,8 +11,9 @@ let btnClick = 0;
 let totalCost = 0;
 let grandTotal = 0;
 let count = 0;
+let alertCount = 0;
 for (const btn of btns) {
-  btn.addEventListener('click', e => {
+  btn.addEventListener('click', (e) => {
     btnClick += 1;
     if (btnClick > 4) {
       btnClick -= 1;
@@ -37,6 +38,7 @@ function colorBtn(btn) {
   document.getElementById(btn).style.background = '#1DD100';
   const p = document.createElement('p');
   p.textContent = btn;
+  p.classList.add('text-start');
   const p2 = document.createElement('p');
   p2.textContent = 'Economoy';
   p2.classList.add('text-center');
@@ -77,6 +79,10 @@ function costDisplay() {
       discount(grandTotal, 0.2);
       const inputBox = document.getElementById('inputBox');
       inputBox.style.display = 'none';
+    }
+    else if(alertCount===0){
+      alert("you entered an invalid input");
+      alertCount++;
     }
   });
 }
